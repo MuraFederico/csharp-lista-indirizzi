@@ -56,8 +56,16 @@ if (!File.Exists(path))
 
 if(corruptedLines.Count > 0)
 {
+    StreamWriter file = File.AppendText("C:/boolean/classe 56/.Net/csharp-lista-indirizzi/log corrupted.txt");
+
+    foreach (string line in corruptedLines)
+    {
+        file.WriteLine(line);
+    }
+
+    file.Close();
     Console.WriteLine("#############");
     Console.WriteLine("# ATTENTION #");
     Console.WriteLine("#############\n");
-    Console.WriteLine($"{corruptedLines.Count()} addresses where corrupted, therfore not transcripted to the formatted file");
+    Console.WriteLine($"{corruptedLines.Count()} addresses where corrupted, therfore not transcripted to the formatted file, see corrupte log for details");
 }
