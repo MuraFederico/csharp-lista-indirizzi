@@ -1,0 +1,54 @@
+------Address------
+Name:		John
+Surname:	Doe
+Street:		120 jefferson st.
+City:		Riverside
+Province:	NJ
+ZIP:		8075
+-------------------
+
+------Address------
+Name:		Jack
+Surname:	McGinnis
+Street:		220 hobo Av.
+City:		Phila
+Province:	PA
+ZIP:		9119
+-------------------
+
+------Address------
+Name:		John Da Man
+Surname:	Repici
+Street:		120 Jefferson St.
+City:		Riverside
+Province:	NJ
+ZIP:		8075
+-------------------
+
+------Address------
+Name:		Stephen
+Surname:	Tyler
+Street:		7452 Terrace "At the Plaza" road
+City:		SomeTown
+Province:	SD
+ZIP:		91234
+-------------------
+
+------Address------
+Name:		Joan
+Surname:	Anne
+Street:		Jet
+City:		9th at Terrace plc
+Province:	Desert City
+ZIP:		0
+-------------------
+
+------Address------
+Name:		
+Surname:	Blankman
+Street:		
+City:		New York
+Province:	NY
+ZIP:		100101
+-------------------
+
