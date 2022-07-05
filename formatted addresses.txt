@@ -38,9 +38,9 @@ ZIP:		91234
 Name:		Joan
 Surname:	Anne
 Street:		Jet
-City:		9th at Terrace plc
-Province:	Desert City
-ZIP:		0
+City:		9th at Terrace plc,Desert City
+Province:	CO
+ZIP:		123
 -------------------
 
 ------Address------

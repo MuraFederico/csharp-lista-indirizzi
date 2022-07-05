@@ -1,18 +1,23 @@
 ﻿
 using csharp_lista_indirizzi;
+using Microsoft.VisualBasic.FileIO;
 
 StreamReader addresses = File.OpenText("C:/boolean/classe 56/.Net/csharp-lista-indirizzi/addresses.csv");
 
-string  fields = addresses.ReadLine();
-/*Console.WriteLine(fields);*/
+addresses.ReadLine();
+
+TextFieldParser parser = new TextFieldParser(addresses);
+
+parser.HasFieldsEnclosedInQuotes = true;
+parser.SetDelimiters(",");
 
 List<Address> addressesList = new List<Address>();
 List<string> corruptedLines = new List<string>();
 
-while (!addresses.EndOfStream)
+while (!parser.EndOfData)
 {
     string address = addresses.ReadLine();
-    string[] arrFields = address.Split(",");
+    string[] arrFields = parser.ReadFields();
     try
     { 
         string name = arrFields[0];
@@ -20,21 +25,19 @@ while (!addresses.EndOfStream)
         string street = arrFields[2];
         string city = arrFields[3];
         string province = arrFields[4];
-        int zIP;
-        try
-        {
-            zIP = int.Parse(arrFields[5]);
-        }
-        catch (FormatException e)
-        {
-            zIP = 0;
-        }
+        int zIP = int.Parse(arrFields[5]);
+
         Address newAddress = new Address(name, surname, street, city, province, zIP);
 
         addressesList.Add(newAddress);
     }catch(IndexOutOfRangeException e)
     {
-        corruptedLines.Add(address);
+        string str = "";
+        foreach(string field in arrFields)
+        {
+            str = str + field + ",";
+        }
+        corruptedLines.Add(str);
     }
 }
 
