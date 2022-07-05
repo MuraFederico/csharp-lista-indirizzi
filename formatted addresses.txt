@@ -35,10 +35,10 @@ ZIP:		91234
 -------------------
 
 ------Address------
-Name:		Joan
-Surname:	Anne
-Street:		Jet
-City:		9th at Terrace plc,Desert City
+Name:		Joan,Anne
+Surname:	Jet
+Street:		9th at Terrace plc
+City:		Desert City
 Province:	CO
 ZIP:		00123
 -------------------
