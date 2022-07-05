@@ -8,7 +8,7 @@ namespace csharp_lista_indirizzi
 {
     public class Address
     {
-        public Address(string name, string surname, string street, string city, string province, int zIP)
+        public Address(string name, string surname, string street, string city, string province, string zIP)
         {
             Name = name.Trim();
             Surname = surname.Trim();
@@ -26,7 +26,7 @@ namespace csharp_lista_indirizzi
 
         public string Province { get; set; }
 
-        public int ZIP { get; set; }
+        public string ZIP { get; set; }
 
         public string ToString()
         {

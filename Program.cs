@@ -18,6 +18,7 @@ while (!parser.EndOfData)
 {
     string address = addresses.ReadLine();
     string[] arrFields = parser.ReadFields();
+    /*if (arrFields.Length == 0) continue;*/
     try
     { 
         string name = arrFields[0];
@@ -25,7 +26,7 @@ while (!parser.EndOfData)
         string street = arrFields[2];
         string city = arrFields[3];
         string province = arrFields[4];
-        int zIP = int.Parse(arrFields[5]);
+        string zIP = arrFields[5];
 
         Address newAddress = new Address(name, surname, street, city, province, zIP);
 
@@ -37,7 +38,7 @@ while (!parser.EndOfData)
         {
             str = str + field + ",";
         }
-        corruptedLines.Add(str);
+        corruptedLines.Add(str+"\n");
     }
 }
 
@@ -67,6 +68,7 @@ if(corruptedLines.Count > 0)
     }
 
     file.Close();
+
     Console.WriteLine("#############");
     Console.WriteLine("# ATTENTION #");
     Console.WriteLine("#############\n");

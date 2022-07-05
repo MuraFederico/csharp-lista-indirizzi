@@ -4,7 +4,7 @@ Surname:	Doe
 Street:		120 jefferson st.
 City:		Riverside
 Province:	NJ
-ZIP:		8075
+ZIP:		08075
 -------------------
 
 ------Address------
@@ -13,7 +13,7 @@ Surname:	McGinnis
 Street:		220 hobo Av.
 City:		Phila
 Province:	PA
-ZIP:		9119
+ZIP:		09119
 -------------------
 
 ------Address------
@@ -22,7 +22,7 @@ Surname:	Repici
 Street:		120 Jefferson St.
 City:		Riverside
 Province:	NJ
-ZIP:		8075
+ZIP:		08075
 -------------------
 
 ------Address------
@@ -40,7 +40,7 @@ Surname:	Anne
 Street:		Jet
 City:		9th at Terrace plc,Desert City
 Province:	CO
-ZIP:		123
+ZIP:		00123
 -------------------
 
 ------Address------
